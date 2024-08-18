@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI and Ethics in Software Engineering</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="AI Ethics Logo" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#ethical">Ethical Considerations</a></li>
+                <li><a href="#security">Security Measures</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#" onclick="openQuiz()">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Homepage Section -->
+    <section id="home" class="section">
+        <div class="content-container">
+            <div class="content-box">
+                <h1>Welcome to AI and Ethics in Software Engineering</h1>
+                <p>Explore the dynamic intersection of Artificial Intelligence and ethics. Discover why understanding the ethical implications of AI is crucial in today’s tech-driven world.</p>
+                <button class="cta-button" onclick="document.location='#about'">Learn More</button>
+            </div>
+            <div class="background-image" style="background-image: url('images/ai_ethics_banner.png');"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="content-container">
+            <div class="content-box">
+                <h2>About the Topic</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">What is AI and ML? <span class="accordion-icon">+</span></div>
+                        <div class="accordion-content">
+                            <p>Artificial Intelligence (AI) and Machine Learning (ML) are key drivers of innovation today. AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as recognizing patterns, learning from data, and making decisions. ML, a subset of AI, involves the use of algorithms and statistical models to enable machines to improve their performance on tasks through experience.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">Why is it Important? <span class="accordion-icon">+</span></div>
+                        <div class="accordion-content">
+                            <p>The integration of AI and ML into various sectors has revolutionized industries. From healthcare and finance to transportation and cybersecurity, these technologies have increased efficiency, improved decision-making, and unlocked new possibilities. However, the rapid advancement of AI and ML also raises significant ethical and security concerns, making it crucial to understand and address these issues to ensure responsible and equitable development.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="cta-button" onclick="document.location='#ethical'">Explore Ethical Issues</button>
+            </div>
+            <div class="background-image" style="background-image: url('images/about_image.png');"></div>
+        </div>
+    </section>
+
+    <!-- Ethical Considerations Section -->
+    <section id="ethical" class="section">
+        <div class="content-container">
+            <div class="content-box">
+                <h2>Ethical Considerations</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">Bias in AI <span class="accordion-icon">+</span></div>
+                        <div class="accordion-content">
+                            <p>Bias in AI occurs when the algorithms or data used to train AI models reflect prejudices or partiality. This can lead to unfair outcomes, particularly in sensitive areas like hiring, law enforcement, and credit scoring. For example, an AI system trained on biased data might disproportionately deny job applications from certain demographic groups. Addressing bias requires careful selection of training data and ongoing monitoring of AI systems to ensure fairness and equality.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">Transparency Issues <span class="accordion-icon">+</span></div>
+                        <div class="accordion-content">
+                            <p>Transparency in AI refers to the ability to understand and interpret how AI systems make decisions. Many AI models operate as "black boxes," where the decision-making process is not easily accessible or interpretable by humans. This lack of transparency can lead to mistrust and challenges in accountability, especially in high-stakes domains like healthcare and criminal justice. Enhancing transparency involves developing explainable AI (XAI) models and providing clear documentation and reasoning behind AI decisions.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">Privacy Concerns <span class="accordion-icon">+</span></div>
+                        <div class="accordion-content">
+                            <p>AI systems often require large amounts of data to function effectively, which raises significant privacy concerns. Personal data used by AI can be vulnerable to breaches or misuse, leading to potential harm to individuals. For instance, facial recognition technology has sparked debates about surveillance and the erosion of personal privacy. Safeguarding privacy involves implementing strong data protection measures and ensuring that AI applications comply with privacy regulations.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="cta-button" onclick="document.location='#security'">Learn About Security</button>
+            </div>
+            <div class="background-image" style="background-image: url('images/ethics_image.png');"></div>
+        </div>
+    </section>
+
+    <!-- Security Measures Section -->
+    <section id="security" class="section">
+        <div class="content-container">
+            <div class="content-box">
+                <h2>Security Measures</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">Exploring the Advancements and Implications of Artificial Intelligence <span class="accordion-icon">+</span></div>
+                        <div class="accordion-content">
+                            <p>This resource discusses the rapid advancements in AI technology and their implications for security. It highlights the importance of building resilient AI systems that can withstand adversarial attacks and ensure data integrity.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">A Review on the Role of AI in Cybersecurity <span class="accordion-icon">+</span></div>
+                        <div class="accordion-content">
+                            <p>This review focuses on the role of AI in enhancing cybersecurity measures. It explains how AI can be used to detect and respond to cyber threats more effectively, and the challenges associated with implementing these technologies in a secure manner.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">A Review based Investigation of Exploratory Analysis in AI and Machine Learning <span class="accordion-icon">+</span></div>
+                        <div class="accordion-content">
+                            <p>This article provides an in-depth exploration of the applications of AI and ML across various sectors. It emphasizes the need for robust security protocols to protect AI systems from being compromised by malicious actors.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">Groups of Experts Often Differ in Their Decisions: What Are the Implications for AI and Ethics? <span class="accordion-icon">+</span></div>
+                        <div class="accordion-content">
+                            <p>This resource examines the ethical challenges posed by AI when expert groups disagree on decisions. It underscores the importance of maintaining security and ethical standards in AI development to avoid potential conflicts and breaches.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">Integrating Artificial Intelligence with Human Psychology <span class="accordion-icon">+</span></div>
+                        <div class="accordion-content">
+                            <p>This resource explores the intersection of AI and human psychology, particularly in the context of security. It discusses how understanding human behavior can inform the design of secure AI systems that are user-friendly and resistant to manipulation.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="cta-button" onclick="document.location='#resources'">Find More Resources</button>
+            </div>
+            <div class="background-image" style="background-image: url('images/security_image.png');"></div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="section">
+        <div class="content-container">
+            <div class="content-box">
+                <h2>Resources</h2>
+                <p>Dive deeper into the subject with these valuable resources:</p>
+                <ul class="resource-links">
+                    <li><a href="https://www.ijsrem.com/" target="_blank">Exploring the Advancements and Implications of Artificial Intelligence</a></li>
+                    <li><a href="https://www.ijiert.org/" target="_blank">A Review on the Role of AI in Cybersecurity</a></li>
+                    <li><a href="https://www.ijritcc.org/" target="_blank">A Review based Investigation of Exploratory Analysis in AI and Machine Learning</a></li>
+                    <li><a href="https://ai-magazine.org/" target="_blank">Groups of Experts Often Differ in Their Decisions: What Are the Implications for AI and Ethics?</a></li>
+                    <li><a href="https://www.ijsrem.com/" target="_blank">Integrating Artificial Intelligence with Human Psychology</a></li>
+                </ul>
+                <p>Stay updated with the latest in AI and ethics. <a href="#">Subscribe to our newsletter</a></p>
+            </div>
+            <div class="background-image" style="background-image: url('images/resources_image.png');"></div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 AI and Ethics in Software Engineering. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Quiz Modal -->
+    <div id="quiz-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeQuiz()">&times;</span>
+            <h2>AI Ethics Quiz</h2>
+            <div id="quiz-container">
+                <!-- Quiz questions will be dynamically injected here -->
+            </div>
+            <button class="cta-button" onclick="submitQuiz()">Submit Answers</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
